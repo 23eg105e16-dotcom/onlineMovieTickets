@@ -1,0 +1,55 @@
+# =====================
+# Backend (Java/Maven)
+# =====================
+backend/target/
+*.jar
+*.war
+*.ear
+*.class
+
+# H2 database files
+*.mv.db
+*.trace.db
+moviesdb.*
+backend/data/
+
+# Spring Boot logs
+*.log
+backend-err.log
+backend/*.log
+
+# =====================
+# Frontend (Node/Vite)
+# =====================
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.env.production
+
+# =====================
+# Environment files
+# =====================
+.env.local
+.env.production
+.env.*.local
+
+# =====================
+# IDE / Editor
+# =====================
+.vscode/settings.json
+.idea/
+*.iml
+
+# =====================
+# OS files
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# Misc
+# =====================
+startup.log
+startup_clean.log
+startup_new.log
+startup_new2.log

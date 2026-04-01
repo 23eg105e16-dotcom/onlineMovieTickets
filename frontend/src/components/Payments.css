@@ -1,0 +1,47 @@
+.payments-container { padding: 10px 0; color: white; }
+
+.payments-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 24px; padding: 0 10px;
+}
+.payments-title { font-size: 24px; font-weight: bold; margin: 0; }
+.total-spent { font-size: 1rem; color: #9ca3af; }
+.total-spent strong { color: #34d399; font-size: 1.1rem; margin-left: 6px; }
+
+.no-payments {
+  text-align: center; padding: 60px 20px;
+  background: rgba(255,255,255,0.03); border: 1px dashed rgba(255,255,255,0.1);
+  border-radius: 16px; color: #6b7280;
+}
+.no-pay-icon { font-size: 3rem; margin-bottom: 16px; }
+.no-payments p { font-size: 1.1rem; margin: 4px 0; }
+.no-pay-sub { font-size: 0.9rem; color: #4b5563; }
+
+.payments-list { display: flex; flex-direction: column; gap: 14px; padding: 0 10px; }
+
+.payment-card {
+  display: flex; justify-content: space-between; align-items: center;
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px; padding: 18px 22px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.payment-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+.payment-card-left { display: flex; align-items: flex-start; gap: 14px; }
+.payment-status-dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 6px; flex-shrink: 0; }
+.payment-status-dot.success { background: #34d399; box-shadow: 0 0 8px rgba(52,211,153,0.6); }
+.payment-status-dot.failed  { background: #ef4444; }
+.payment-movie { font-size: 1rem; font-weight: 600; color: #e5e7eb; margin-bottom: 4px; }
+.payment-meta  { font-size: 0.82rem; color: #9ca3af; margin-bottom: 4px; }
+.payment-card-info { font-size: 0.78rem; color: #6b7280; }
+.payment-card-right { text-align: right; flex-shrink: 0; }
+.payment-amount { font-size: 1.3rem; font-weight: 700; color: #34d399; margin-bottom: 6px; }
+.payment-badge {
+  display: inline-block; padding: 2px 10px; border-radius: 20px;
+  font-size: 0.72rem; font-weight: 600; text-transform: uppercase; margin-bottom: 6px;
+}
+.payment-badge.success { background: rgba(52,211,153,0.15); color: #34d399; border: 1px solid rgba(52,211,153,0.3); }
+.payment-badge.failed  { background: rgba(239,68,68,0.15); color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
+.payment-txn { font-size: 0.72rem; color: #4b5563; font-family: monospace; }
+
+.upi-id-text { color: #a5b4fc; font-weight: 500; }
+.payment-method-tag { font-size: 0.72rem; color: #6b7280; margin-bottom: 4px; }

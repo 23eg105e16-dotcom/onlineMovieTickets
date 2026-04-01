@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: movie-tickets-api
+    runtime: java
+    buildCommand: cd backend && mvn clean package -DskipTests
+    startCommand: java -jar backend/target/movie-tickets-1.0.0.jar
+    envVars:
+      - key: JAVA_VERSION
+        value: 17
+    disk:
+      name: moviesdb
+      mountPath: /opt/render/project/src
+      sizeGB: 1
