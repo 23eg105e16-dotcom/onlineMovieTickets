@@ -24,13 +24,13 @@ backend/*.log
 frontend/node_modules/
 frontend/dist/
 frontend/.env.local
-frontend/.env.production
+# frontend/.env.production is committed (contains only public API URL)
 
 # =====================
 # Environment files
 # =====================
 .env.local
-.env.production
+# .env.production is committed (public API URL only)
 .env.*.local
 
 # =====================
